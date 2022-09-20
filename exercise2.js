@@ -3,6 +3,7 @@ fetch("https://jsonplaceholder.typicode.com/todos")
   .then(json => {
     
      const todosTitles = json.map(todo => todo.title );
+     
      console.log(todosTitles);
     })
   .catch(function(err) { 
