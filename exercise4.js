@@ -7,7 +7,7 @@ fetch("https://jsonplaceholder.typicode.com/todos")
       });
       
       const total = json.reduce((total, todo, index, array) => {return array.length - completed.length},0)
-      console.log('Total completed todos = ' + total)
+      console.log('Total completed todos = ' + total) 
    })
   .catch(function(err) { 
     console.log(err);
